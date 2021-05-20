@@ -44,13 +44,13 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: 'Fetch Data Example',
+        title: 'FutureBuilder Demo',
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
         home: Scaffold(
           appBar: AppBar(
-            title: Text('Fetch Data Example'),
+            title: Text('FutureBuilder Demo'),
           ),
           body: Center(
             child: RerunFutureBuilder(
