@@ -24,7 +24,7 @@ class Body extends StatelessWidget {
               children: <Widget>[
                 Container(
                   // height: 500,
-                  margin: EdgeInsets.only(top: size.height * 0.3),
+                  margin: EdgeInsets.only(top: size.height * 0.30),
                   padding: EdgeInsets.only(
                       top: size.height * 0.12,
                       left: kDefaultPaddin,
@@ -43,7 +43,7 @@ class Body extends StatelessWidget {
                     ],
                   ),
                 ),
-                ProductTitleWithImage(product: product),
+                ProductTitleWithImage(product: product, size: size,),
               ],
             )),
       ]),

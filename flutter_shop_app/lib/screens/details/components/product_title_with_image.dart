@@ -7,9 +7,11 @@ class ProductTitleWithImage extends StatelessWidget {
   const ProductTitleWithImage({
     Key? key,
     required this.product,
+    required this.size,
   }) : super(key: key);
 
   final Product product;
+  final Size size;
 
   @override
   Widget build(BuildContext context) {
@@ -55,10 +57,13 @@ class ProductTitleWithImage extends StatelessWidget {
                   width: kDefaultPaddin,
                 ),
                 Expanded(
-                    child: Image.asset(
-                      product.image,
-                      fit: BoxFit.fill,
-                    ))
+                    child: SizedBox(
+                      height: size.height * 0.3,
+                      child: Image.asset(
+                        product.image,
+                        fit: BoxFit.fitHeight,
+                      ),
+                    )),
               ],
             ),
           ],
